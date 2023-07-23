@@ -14,10 +14,10 @@ const Hero = () => {
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-full grid grid-cols-6 gap-3">
           <div className="hidden md:col-span-2  md:block">
-            <div className="bg-base-300 text-gray-900 text-left px-10 py-5">
+            <div className="bg-neutral text-neutral-content text-left px-10 py-5">
               <ul>
-                <li className="grid grid-cols-2 gap-5">
-                  Games{' '}
+                <li className="grid grid-cols-2 gap-5 mb-5">
+                  Trending Products{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="26"
@@ -29,7 +29,7 @@ const Hero = () => {
                     />
                   </svg>
                 </li>
-                <li className="grid grid-cols-2 gap-5">
+                <li className="grid grid-cols-2 gap-5 mb-5">
                   Gift Crads{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +42,47 @@ const Hero = () => {
                     />
                   </svg>
                 </li>
+                <li className="grid grid-cols-2 gap-5 mb-5">
+                  Gaming Giftcards{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 256 256">
+                    <path
+                      fill="currentColor"
+                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                    />
+                  </svg>
+                </li>
+                <li className="grid grid-cols-2 gap-5 mb-5">
+                  Video Games{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 256 256">
+                    <path
+                      fill="currentColor"
+                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                    />
+                  </svg>
+                </li>
+                <li className="grid grid-cols-2 gap-5 mb-5">
+                  Subscriptions{' '}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 256 256">
+                    <path
+                      fill="currentColor"
+                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                    />
+                  </svg>
+                </li>
                 <li className="grid grid-cols-2 gap-5">
-                  Best Seller{' '}
+                  Best Softwares{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="26"

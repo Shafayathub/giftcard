@@ -3,8 +3,11 @@ import React from 'react';
 
 const Loading = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <progress className="progress progress-primary w-56 lg:w-96"></progress>
+    <div className="min-h-screen flex justify-center items-center gap-1">
+      <span className="loading loading-bars loading-xs"></span>
+      <span className="loading loading-bars loading-sm"></span>
+      <span className="loading loading-bars loading-md"></span>
+      <span className="loading loading-bars loading-lg"></span>
     </div>
   );
 };
