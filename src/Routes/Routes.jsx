@@ -2,11 +2,21 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Home from '../Pages/Home/Home';
 import Main from '../Layout/Main';
-import Games from '../Pages/Games';
 import Register from '../Pages/Login/Register';
 import Login from '../Pages/Login/Login';
-import UpdateProfile from '../Pages/Profile/UpdateProfile';
 import RequireAuth from '../Components/RequireAuth/RequireAuth';
+import DashboardLayout from '../Layout/DashboardLayout';
+import Dashboard from '../Pages/Dashboard/Dashboard';
+import AddUser from '../Pages/Dashboard/AddUser/AddUser';
+import AddProduct from '../Pages/Dashboard/AddProduct/AddProduct';
+import TrendingProduct from '../Pages/TrendingProduct/TrendingProduct';
+import GiftCards from '../Pages/GiftCards/GiftCards';
+import Subscription from '../Pages/Subscription/Subscription';
+import VideoGames from '../Pages/VideoGames/VideoGames';
+import GamingGiftcards from '../Pages/GamingGiftcards/GamingGiftcards';
+import BestSoftwares from '../Pages/BestSoftwares/BestSoftwares';
+import ProductDetails from '../Components/ProductDetails/ProductDetails';
+import PaymentDetails from '../Components/PaymentDetails/PaymentDetails';
 
 const router = createBrowserRouter([
   {
@@ -18,9 +28,30 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: '/games',
-        element: <Games></Games>,
+        path: '/trending_products',
+        element: <TrendingProduct></TrendingProduct>,
       },
+      {
+        path: '/giftcards',
+        element: <GiftCards></GiftCards>,
+      },
+      {
+        path: '/gaming_giftcards',
+        element: <GamingGiftcards></GamingGiftcards>,
+      },
+      {
+        path: '/videogames',
+        element: <VideoGames></VideoGames>,
+      },
+      {
+        path: '/subscription',
+        element: <Subscription></Subscription>,
+      },
+      {
+        path: '/softwares',
+        element: <BestSoftwares></BestSoftwares>,
+      },
+
       {
         path: '/login',
         element: <Login></Login>,
@@ -30,12 +61,43 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: '/profile',
+        path: '/productDetails/:id',
+        element: <ProductDetails></ProductDetails>,
+      },
+
+      {
+        path: '/paymentDetails',
         element: (
           <RequireAuth>
-            <UpdateProfile></UpdateProfile>
+            <PaymentDetails></PaymentDetails>
           </RequireAuth>
         ),
+      },
+    ],
+  },
+  {
+    path: '/dashboard',
+    element: (
+      <RequireAuth>
+        <DashboardLayout></DashboardLayout>
+      </RequireAuth>
+    ),
+    children: [
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+      },
+      {
+        path: '/dashboard/adduser',
+        element: <AddUser></AddUser>,
+      },
+      {
+        path: '/dashboard/addproducts',
+        element: <AddProduct></AddProduct>,
+      },
+      {
+        path: '/dashboard/products',
+        element: <Dashboard></Dashboard>,
       },
     ],
   },

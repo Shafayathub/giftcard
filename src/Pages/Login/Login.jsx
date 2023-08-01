@@ -104,6 +104,7 @@ const Login = () => {
         <button
           onClick={async () => {
             await signInWithGoogle();
+            navigate(from, { replace: true });
           }}
           className="btn btn-outline w-full">
           <img className="w-8 mr-2 rounded-lg" src={google} alt="GOOGLE" />{' '}

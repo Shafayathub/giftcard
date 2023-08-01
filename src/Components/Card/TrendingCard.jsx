@@ -1,25 +1,41 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import image from '../../assets/images/cardImage.jpg';
+import { useNavigate } from 'react-router-dom';
 
-const TrendingCard = () => {
+// eslint-disable-next-line react/prop-types
+const TrendingCard = ({ product }) => {
+  // eslint-disable-next-line react/prop-types
+  // const { name, img, catagory, price, oldPrice, about } = product;
+  const navigate = useNavigate();
+  const handleBuyNow = (id) => {
+    navigate(`/productDetails/${id}`);
+  };
+
   return (
     <div className="card w-80 glass shadow-xl">
       <figure>
-        <img src={image} alt="Shoes" />
+        <img src={product?.img} alt="Shoes" />
       </figure>
       <div className="card-body text-white">
         <h2 className="card-title">
-          Shoes!
-          <div className="badge badge-secondary">NEW</div>
+          {product?.name}
+          <div className="badge badge-secondary">{product?.catagory}</div>
         </h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p>{product?.about}</p>
         <div className="card-actions justify-start">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+          <h5 className="badge badge-outline">{product?.price}$</h5>
+          <h5 className="badge badge-outline line-through">
+            {product?.oldPrice}$
+          </h5>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Learn now!</button>
+          <button
+            onClick={() => handleBuyNow(product?._id)}
+            className="btn btn-primary">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>

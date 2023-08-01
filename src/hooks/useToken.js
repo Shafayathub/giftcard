@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const useToken = (user) => {
   const [token, setToken] = useState('');
   useEffect(() => {
-    // console.log('opions I can put into data of user', user);
+    console.log('opions I can put into data of user', user);
     const email = user?.user?.email;
     // const name = user?.user?.displayName;
     const currentUser = {

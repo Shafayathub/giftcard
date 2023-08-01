@@ -7,7 +7,7 @@ import {
 } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Components/Shared/Loading';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import auth from '../../firebase/firebase.config';
 import google from '../../assets/images/google.png';
@@ -140,6 +140,7 @@ const Register = () => {
           CONTINUE WITH GOOGLE
         </button>
       </div>
+      <ToastContainer />
     </section>
   );
 };

@@ -2,6 +2,7 @@
 import React from 'react';
 import image from '../../assets/images/background.jpg';
 import image1 from '../../assets/images/bigsale.png';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -16,83 +17,99 @@ const Hero = () => {
           <div className="hidden md:col-span-2  md:block">
             <div className="bg-neutral text-neutral-content text-left px-10 py-5">
               <ul>
-                <li className="grid grid-cols-2 gap-5 mb-5">
-                  Trending Products{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li className="mb-5">
+                  <Link
+                    to="/trending_products"
+                    className="grid grid-cols-2 gap-5">
+                    Trending Products{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
-                <li className="grid grid-cols-2 gap-5 mb-5">
-                  Gift Crads{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li className="mb-5">
+                  <Link to="/giftcards" className="grid grid-cols-2 gap-5">
+                    Gift Crads{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
-                <li className="grid grid-cols-2 gap-5 mb-5">
-                  Gaming Giftcards{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li className="mb-5">
+                  <Link
+                    to="/gaming_giftcards"
+                    className="grid grid-cols-2 gap-5">
+                    Gaming Giftcards{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
-                <li className="grid grid-cols-2 gap-5 mb-5">
-                  Video Games{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li className="mb-5">
+                  <Link to="/videogames" className="grid grid-cols-2 gap-5">
+                    Video Games{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
-                <li className="grid grid-cols-2 gap-5 mb-5">
-                  Subscriptions{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li className="mb-5">
+                  <Link to="/subscription" className="grid grid-cols-2 gap-5 ">
+                    Subscriptions{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
-                <li className="grid grid-cols-2 gap-5">
-                  Best Softwares{' '}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 256 256">
-                    <path
-                      fill="currentColor"
-                      d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
-                    />
-                  </svg>
+                <li>
+                  <Link to="/softwares" className="grid grid-cols-2 gap-5">
+                    Best Softwares{' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="26"
+                      viewBox="0 0 256 256">
+                      <path
+                        fill="currentColor"
+                        d="m220.24 132.24l-72 72a6 6 0 0 1-8.48-8.48L201.51 134H40a6 6 0 0 1 0-12h161.51l-61.75-61.76a6 6 0 0 1 8.48-8.48l72 72a6 6 0 0 1 0 8.48Z"
+                      />
+                    </svg>
+                  </Link>
                 </li>
               </ul>
             </div>

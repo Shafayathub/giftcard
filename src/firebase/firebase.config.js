@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyB-E_e-W7W1SLPJK88QALAEUvnqg79Ldf8',
-  authDomain: 'giftcard-9ec73.firebaseapp.com',
-  projectId: 'giftcard-9ec73',
-  storageBucket: 'giftcard-9ec73.appspot.com',
-  messagingSenderId: '591113619753',
-  appId: '1:591113619753:web:42fc45ae526b4b16840f38',
+  apiKey: 'AIzaSyAaV0ujF2ex4sJQ329VeEA4XEgqxvM98bQ',
+  authDomain: 'a2gc-87c41.firebaseapp.com',
+  projectId: 'a2gc-87c41',
+  storageBucket: 'a2gc-87c41.appspot.com',
+  messagingSenderId: '224729183935',
+  appId: '1:224729183935:web:242964cb425ab4b1e0b80a',
 };
 
 // Initialize Firebase

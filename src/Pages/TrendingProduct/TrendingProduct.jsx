@@ -1,8 +1,16 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import TrendingCard from '../Card/TrendingCard';
+import React, { useEffect, useState } from 'react';
+import TrendingCard from '../../Components/Card/TrendingCard';
 import BgImage from '../../assets/images/background.jpg';
-const CardSection = () => {
+
+const TrendingProduct = () => {
+  const [products, setProducts] = useState(null);
+  useEffect(() => {
+    fetch('http://localhost:5000/products')
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   return (
     <section
       className="p-5"
@@ -15,10 +23,12 @@ const CardSection = () => {
         more!
       </p>
       <div className="mt-5 flex flex-wrap gap-5 justify-around">
-        <TrendingCard></TrendingCard>
+        {products?.map((product, index) => (
+          <TrendingCard key={index} product={product}></TrendingCard>
+        ))}
       </div>
     </section>
   );
 };
 
-export default CardSection;
+export default TrendingProduct;
